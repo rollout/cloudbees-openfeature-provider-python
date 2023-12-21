@@ -8,27 +8,15 @@ from openfeature.provider.provider import AbstractProvider
 from rox.server.rox_server import Rox
 from rox.server.rox_options import RoxOptions
 
-# example of a naive Logger
-class MyLogger:
-    def error(self, msg, ex=None):
-        print('error: %s exception: %s' %(msg, ex))
-
-    def warn(self, msg, ex=None):
-        print('warn: %s' % msg)
-
-    def debug(self, msg, ex=None):
-        print('debug: %s' % msg)
-
 class CloudbeesProvider(AbstractProvider):
-    def __init__(self, api_key=""):
+    def __init__(self, api_key="", rox_options=None):
         print('setup')
         if api_key == "":
             raise Exception("Must provide apiKey")
         
-        options = RoxOptions(
-            logger=MyLogger()
-        )
-        Rox.setup(api_key, options).result()
+        if rox_options is None:
+            rox_options = RoxOptions()
+        Rox.setup(api_key, rox_options).result()
 
     def get_metadata(self) -> Metadata:
         return Metadata("Cloudbees")
