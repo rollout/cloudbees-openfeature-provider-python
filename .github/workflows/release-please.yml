@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
-
+  id-token: write
 name: release-please
 
 jobs:
@@ -15,8 +15,6 @@ jobs:
     environment:
       name: pypi
       url: https://test.pypi.org/project/cloudbees-openfeature-provider-python
-    permissions:
-      id-token: write
     steps:
       - uses: google-github-actions/release-please-action@v4
         id: release
