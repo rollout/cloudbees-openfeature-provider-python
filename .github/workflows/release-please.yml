@@ -3,18 +3,18 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-  pull-requests: write
-  id-token: write
 name: release-please
 
 jobs:
   release-please:
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+      
     runs-on: ubuntu-20.04
     environment:
       name: pypi
-      url: https://test.pypi.org/project/cloudbees-openfeature-provider-python
     steps:
       - uses: google-github-actions/release-please-action@v4
         id: release

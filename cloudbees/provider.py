@@ -10,7 +10,6 @@ from rox.server.rox_options import RoxOptions
 
 class CloudbeesProvider(AbstractProvider):
     def __init__(self, api_key="", rox_options=None):
-        print('setup')
         if api_key == "":
             raise Exception("Must provide apiKey")
         
