@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.1...v0.1.2) (2023-12-22)
+
+
+### Miscellaneous Chores
+
+* release 0.1.2 ([5901f04](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/5901f04cabaed85f58fc07935064aba0033b6ab2))
+
 ## [0.1.1](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.0.4...v0.1.1) (2023-12-22)
 
 
