@@ -14,6 +14,13 @@
 
 * release action, python version ([3baae5b](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/3baae5b315d7e295bd29d42da9cd30ea48d11277))
 
+## [0.0.4](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.0.4...v0.0.4) (2023-12-22)
+
+
+### Bug Fixes
+
+* release action, python version ([3baae5b](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/3baae5b315d7e295bd29d42da9cd30ea48d11277))
+
 ## [0.0.4](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.0...v0.0.4) (2023-12-22)
 
 
