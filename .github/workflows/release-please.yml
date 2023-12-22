@@ -11,7 +11,7 @@ name: release-please
 
 jobs:
   release-please:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment:
       name: pypi
       url: https://test.pypi.org/project/cloudbees-openfeature-provider-python
