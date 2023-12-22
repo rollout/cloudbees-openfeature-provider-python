@@ -1,4 +1,6 @@
 from openfeature import api
+from openfeature.exception import ErrorCode
+from openfeature.flag_evaluation import Reason
 from openfeature.api import EvaluationContext
 from cloudbees.provider import CloudbeesProvider
 import unittest
@@ -89,13 +91,12 @@ class IntegrationTests(unittest.TestCase):
         self.assertEqual(self.client.get_float_value("integer-with-context", -1.0), 10.0)
     
     def test_object_flag(self):
-        result = self.client.get_object_details('not-supported', {'a': 'b'})
-        self.assertEqual(result.reason, 'ERROR')
-        #await expect(client.getObjectDetails('not-supported', {a: 'b'})).resolves.toEqual({
-        #  errorCode: 'INVALID_CONTEXT',
-        #  errorMessage: 'Not implemented - CloudBees feature management does not support an object type. Only String, Number and Boolean',          flagKey: 'not-supported',
-        #  reason: 'ERROR',
-        #  value: {a: 'b'},
+        default_value = {'a': 'b'}
+        result = self.client.get_object_details('not-supported', default_value)
+        self.assertEqual(result.reason, Reason.ERROR)
+        self.assertEqual(result.value, default_value)
+        self.assertEqual(result.error_code, ErrorCode.GENERAL)
+        self.assertEqual(result.error_message, 'Not implemented')
 
     def test_differently_typed_context_values(self):
         # matching targeting to property
