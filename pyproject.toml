@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_file = "cloudbees/_version.py"
+
+[project]
+dynamic = ["version"]
+name="cloudbees-openfeature-provider-python"
+authors=[{name = "CloudBees", email = "support@cloudbees.com"}]
+description="CloudBees.com OpenFeature SDK"
+keywords=["CloudBees", "OpenFeature"]
+requires-python= ">=3.8, <=3.11"
+readme = "README.md"
+dependencies = [
+    'rox >= 5.0',
+    'openfeature-sdk >= 0.4.1',
+]
+classifiers=[
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'License :: Other/Proprietary License',
+]
+
+[project.urls]
+homepage='https://github.com/rollout/cloudbees-openfeature-provider-python'
+
+[tools.setuptools]
+packages=["cloudbees"]
+
+[tool.setuptools.packages.find]
+exclude = ["./test*"]

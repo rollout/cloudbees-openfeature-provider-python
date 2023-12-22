@@ -3,3 +3,4 @@ __pycache__
 dist/
 build/
 cloudbees/_version.py
+cloudbees_openfeature_provider_python.egg-info/
