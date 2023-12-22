@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.2...v0.1.3) (2023-12-22)
+
+
+### Documentation
+
+* adding README data ([7ad62a7](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/7ad62a7209d1887d1244501de68443c963b8d67a))
+
 ## [0.1.2](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.1...v0.1.2) (2023-12-22)
 
 
