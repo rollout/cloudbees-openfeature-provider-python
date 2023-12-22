@@ -22,6 +22,9 @@ jobs:
           release-type: python
       - uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
+        with:
+          fetch-depth: 0
+          fetch-tags: true
       - uses: actions/setup-python@v5
         if: ${{ steps.release.outputs.release_created }}
         with:
