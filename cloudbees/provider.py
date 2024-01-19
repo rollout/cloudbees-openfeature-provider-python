@@ -9,13 +9,13 @@ from rox.server.rox_server import Rox
 from rox.server.rox_options import RoxOptions
 
 class CloudbeesProvider(AbstractProvider):
-    def __init__(self, api_key="", rox_options=None):
+    def __init__(self, api_key="", rox_options=None, timeout=None):
         if api_key == "":
             raise Exception("Must provide apiKey")
         
         if rox_options is None:
             rox_options = RoxOptions()
-        Rox.setup(api_key, rox_options).result()
+        Rox.setup(api_key, rox_options).result(timeout)
 
     def get_metadata(self) -> Metadata:
         return Metadata("Cloudbees")
