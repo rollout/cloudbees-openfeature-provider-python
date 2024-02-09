@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.4](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.3...v0.1.4) (2024-02-08)
+
+
+### Features
+
+* adding provider timeout to init ([9e7886a](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/9e7886ae1b8ad63a1410eedf614f73d1eabbc86e))
+* updating to latest rox, support python above 3.11 ([9e7886a](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/9e7886ae1b8ad63a1410eedf614f73d1eabbc86e))
+
+
+### Miscellaneous Chores
+
+* release 0.1.4 ([68d8a3d](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/68d8a3da7ba1756c9a9fce97ec4caa2020340f77))
+
 ## [0.1.3](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.2...v0.1.3) (2023-12-22)
 
 
