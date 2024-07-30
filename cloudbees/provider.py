@@ -15,7 +15,8 @@ class CloudbeesProvider(AbstractProvider):
         
         if rox_options is None:
             rox_options = RoxOptions()
-        Rox.setup(api_key, rox_options).result(timeout)
+        
+        self.setup_result = Rox.setup(api_key, rox_options).result(timeout)
 
     def get_metadata(self) -> Metadata:
         return Metadata("Cloudbees")
