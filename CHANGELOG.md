@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.5](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.4...v0.1.5) (2024-09-26)
+
+
+### Features
+
+* adding a datamember for rox.setup result for accessibility ([af8cd3b](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/af8cd3b770e9a70fb7fd0aeac36bce876a512e20))
+
+
+### Miscellaneous Chores
+
+* release 0.1.5 ([13c4c55](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/13c4c55787631c73b02c333581e0f3d5225e3114))
+
 ## [0.1.4](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.3...v0.1.4) (2024-02-08)
 
 
