@@ -1,2 +1,2 @@
 openfeature-sdk==0.4.1
-rox==5.0.10
+rox==6.0.0
