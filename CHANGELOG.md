@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.6](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.5...v0.1.6) (2025-01-22)
+
+
+### Features
+
+* Add possibility for OpenFeature provider to connect with CBP as well ([3b8f076](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/3b8f076e2a47211d7043cd2f05cead455a5fd544))
+
+
+### Miscellaneous Chores
+
+* release 0.1.6 ([4190ade](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/4190ade8d81566a19df0be01eb5ccbd628c9a691))
+
 ## [0.1.5](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.4...v0.1.5) (2024-09-26)
 
 
