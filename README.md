@@ -37,7 +37,6 @@ You can configure the CloudBees provider by doing the following:
 
 ```python
 from openfeature import api
-from openfeature.api import EvaluationContext
 from cloudbees.provider import CloudbeesProvider
 
 appKey = 'INSERT_APP_KEY_HERE'
