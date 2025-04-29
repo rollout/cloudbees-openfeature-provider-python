@@ -1,7 +1,7 @@
 from openfeature import api
 from openfeature.exception import ErrorCode
 from openfeature.flag_evaluation import Reason
-from openfeature.api import EvaluationContext
+from openfeature.evaluation_context import EvaluationContext
 from cloudbees.provider import CloudbeesProvider
 import unittest
 from rox.server.rox_options import RoxOptions

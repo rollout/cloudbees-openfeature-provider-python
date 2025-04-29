@@ -1,8 +1,8 @@
 from typing import List, Optional, Union
-from openfeature.api import EvaluationContext
+from openfeature.evaluation_context import EvaluationContext
 
 from openfeature.flag_evaluation import FlagResolutionDetails
-from openfeature.api import Hook
+from openfeature.hook import Hook
 from openfeature.provider.metadata import Metadata
 from openfeature.provider.provider import AbstractProvider
 from rox.server.rox_server import Rox
