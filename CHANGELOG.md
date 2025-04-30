@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.6...v0.1.7) (2025-04-30)
+
+
+### Bug Fixes
+
+* **openfeature-sdk:** fix imports of EvaluationContext and Hook with 0.8.1 release ([db8762f](https://github.com/rollout/cloudbees-openfeature-provider-python/commit/db8762fa515317c206182b9f76c5a6bc369a5e3f))
+
 ## [0.1.6](https://github.com/rollout/cloudbees-openfeature-provider-python/compare/v0.1.5...v0.1.6) (2025-01-22)
 
 
